@@ -9,6 +9,9 @@ public class Tiket {
 	
 	// constructeur 
 	
+	public Tiket() {
+		
+	}
 	public Tiket( String Description,  int Quantite, double Prix, Double Total) {
 		// intenciation this= l'objet  parametre pour
 		
@@ -35,7 +38,7 @@ public class Tiket {
 	}
 
 	public void setQuantite(String string) {
-		this.quantite = string;
+		this.quantite = quantite;
 	}
 
 	public double getPrix() {

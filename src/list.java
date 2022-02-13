@@ -1,4 +1,5 @@
-//import java.util.ArrayList;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class list {
@@ -10,6 +11,7 @@ public class list {
 		
 		scan = new Scanner(System.in);
 		
+        ArrayList<Produit> listDeProduit = new ArrayList<Produit>();
 		
 		 System.out.println(" Entrez une quantite : ");
 		 Integer qte = Integer.parseInt(scan.nextLine());
@@ -32,12 +34,22 @@ public class list {
 		         total += (Double) ( quantite * prix);
 		        System.out.println(" Montant total: "+ total + "€");
 		        
+		        
+		        
+		        //Ici on utilise le principe de class en ajoutant un objet produit ds la liste des produits.
+		        
+		        listDeProduit.add(new Produit(description, quantite, prix));
+
+		        
 		        index ++;
 			 
 			 
 		 }
 		
 		 
+		 for(Produit produit: listDeProduit) {
+			 System.out.println("Le prix : "+produit.getPrix() + " ");
+		 }
 		 
 			 
 		 }

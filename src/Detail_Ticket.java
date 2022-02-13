@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Detail_Ticket {
@@ -10,8 +11,11 @@ public class Detail_Ticket {
 		        System.out.println("|                                                                        |");
 		        System.out.println("--------------------------------------------------------------------------");
 		        
+		        
+		        
 		        Scanner input = new Scanner(System.in);
-		      
+	
+		        
 		        for(int i=1;i<=2;i++) {
 		        System.out.print(" Entrez une description : ");
 		        String description = input.nextLine();
@@ -29,9 +33,10 @@ public class Detail_Ticket {
 		        
 		        
 
+		      
 		        System.out.println("");
 		        System.out.println("--------------------------- Merci de votre visite  ------------------------");
-		        System.out.println("|                           et A Bientot                                  |");
+		        System.out.println("|                                                                         |");
 		        System.out.println("---------------------------------------------------------------------------");
 		    
 
